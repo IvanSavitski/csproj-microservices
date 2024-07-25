@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61ef3487-7973-49a0-b399-8f689fb4d3c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/test/task/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/test/task/apigateway/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/MainServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/config/CassandraConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/controller/CountryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/events/CountryEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/events/CountryKafkaEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/models/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/models/Country3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/models/Country_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/repository/CountryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/java/test/task/csproj/service/CountryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csproj/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/test/task/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/test/task/discoveryserver/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose3.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/test/task/emailservice/EmailServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/test/task/emailservice/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/test/task/emailservice/model/EmailRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/test/task/emailservice/service/EmailPdfServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/java/test/task/emailservice/service/EmailXlsxServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/ReportServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/config/ReportConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/listeners/ReportListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/models/CountryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/models/CountryReportKafkaEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/service/PdfApachePoiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/java/test/task/reportservice/service/XlsxApachePoiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2im3ppiGGgxmVsncDWahDLOWBS0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "78f447d99c62e95b60643788dd1aac37",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EmailServiceApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="email-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.emailservice.EmailServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="csproj" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.csproj.MainServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="report-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="test.task.reportservice.ReportServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61ef3487-7973-49a0-b399-8f689fb4d3c7" name="Changes" comment="" />
+      <created>1720082111219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720082111219</updated>
+      <workItem from="1720082113131" duration="9515000" />
+      <workItem from="1720440735212" duration="7799000" />
+      <workItem from="1720623121946" duration="96010000" />
+      <workItem from="1721655383669" duration="1394000" />
+      <workItem from="1721657004745" duration="120000" />
+      <workItem from="1721657233977" duration="2347000" />
+      <workItem from="1721662949541" duration="20465000" />
+      <workItem from="1721922415792" duration="2796000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

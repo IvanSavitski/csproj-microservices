@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: csproj
+
+  cassandra:
+    keyspace-name: psql
+    contact-points: localhost
+    schema-action: create_if_not_exists
+    port: 9042
+    local-datacenter: datacenter1
+
+  cache:
+    type: redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        #retries: 0
+        acks: all
+        spring:
+          json:
+            add:
+              type:
+                headers: true
+logging:
+  level:
+    org:
+      springframework:
+        boot: INFO
+        data:
+          cassandra:
+            core:
+              cql:
+                CqlTemplate: INFO
+
+server:
+  port: 8082

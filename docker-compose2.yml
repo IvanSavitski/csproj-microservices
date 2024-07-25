@@ -1,0 +1,75 @@
+version: '3'
+services:
+  cassandra:
+    container_name: cassandra
+    image: cassandra:4.0
+    environment:
+      CASSANDRA_CLUSTER_NAME: my-cluster
+      CASSANDRA_BROADCAST_ADDRESS: cassandra
+      MAX_HEAP_SIZE: 256M
+      HEAP_NEWSIZE: 128M
+    ports:
+      - "9042:9042"
+    volumes:
+      - ./docker-data/cassandra:/var/lib/cassandra
+      - ./create-keyspace.cql:/docker-entrypoint-initdb.d/create-keyspace.cql
+
+  redis:
+    container_name: redis
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+  main-service:
+    image: main-service:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - cassandra
+      - redis
+
+  report-service:
+    image: report-service:latest
+    ports:
+      - "8082:8082"
+    depends_on:
+      - main-service
+      - cassandra
+
+  email-service:
+    image: email-service:latest
+    ports:
+      - "8083:8083"
+    depends_on:
+      - report-service
+      - cassandra
+      - redis
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "22181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+volumes:
+  redis-data:
