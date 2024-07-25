@@ -1,0 +1,1 @@
+Cassndra DB, Kafka, Spring Mail reports microservices project
