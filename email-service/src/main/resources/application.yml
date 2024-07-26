@@ -1,0 +1,12 @@
+spring:
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    username: ivanzoofficial@yandex.by
+    password: password
+
+    properties:
+      "mail.transport.protocol": smtp
+      "mail.smtp.auth": true
+      "mail.smtp.starttls.enable": true
+      protocol: smtp
